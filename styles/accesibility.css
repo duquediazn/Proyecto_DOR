@@ -2,7 +2,7 @@ main {
     grid-template-columns: 20% 60% 20%;
 }
 
-.legal p {
+.accesibility p {
     text-align: justify;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
 }
