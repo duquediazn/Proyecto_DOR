@@ -2,7 +2,7 @@ main {
     grid-template-columns: 20% 60% 20%;
 }
 
-.privacy ul {
+.legal ul {
         font-family: "Roboto";
         font-weight: 400;
         font-size: 16px;
@@ -10,13 +10,14 @@ main {
         color: var(--text);
         text-align: justify;
         margin-left:8%;
+    
 }
 
-.privacy li {
+.legal li {
     margin-bottom: 1rem;
 }
 
-.privacy p {
+.legal p {
     text-align: justify;
     margin-bottom: 1rem;
 }
