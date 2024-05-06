@@ -1,0 +1,8 @@
+main {
+    grid-template-columns: 20% 60% 20%;
+}
+
+.accesibility p {
+    text-align: justify;
+    margin-bottom: 3rem;
+}
