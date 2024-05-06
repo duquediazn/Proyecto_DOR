@@ -2,6 +2,10 @@ main {
     grid-template-columns: 20% 60% 20%;
 }
 
+.accesibility {
+    margin-bottom: 3rem;
+}
+
 .accesibility p {
     text-align: justify;
     margin-bottom: 3rem;

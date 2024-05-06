@@ -2,6 +2,10 @@ main {
     grid-template-columns: 20% 60% 20%;
 }
 
+.privacy {
+    margin-bottom: 3rem;
+}
+
 .privacy ul {
         font-family: "Roboto";
         font-weight: 400;

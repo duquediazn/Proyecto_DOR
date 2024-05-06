@@ -2,6 +2,10 @@ main {
     grid-template-columns: 20% 60% 20%;
 }
 
+.cookiespol {
+    margin-bottom: 3rem;
+}
+
 .cookiespol ul {
         font-family: "Roboto";
         font-weight: 400;
