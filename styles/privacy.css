@@ -1,0 +1,22 @@
+main {
+    grid-template-columns: 20% 60% 20%;
+}
+
+.privacy ul {
+        font-family: "Roboto";
+        font-weight: 400;
+        font-size: 16px;
+        margin: 1rem;
+        color: var(--text);
+        text-align: justify;
+        margin-left:10%;
+    
+}
+
+.privacy li {
+    margin-bottom: 1rem;
+}
+
+.privacy p {
+    margin-bottom: 1rem;
+}
