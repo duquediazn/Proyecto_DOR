@@ -223,6 +223,7 @@ p {
 /*Breadcrumb*/
 #breadcrumb {
     width: 100%;
+    height: fit-content;
     grid-column: 1/4;
     background-color: var(--blue);
 }
@@ -555,7 +556,7 @@ footer {
 
 .license p {
     text-align: center;
-    margin: 0;
+    margin: 0 2%;
 }
 
 .license p,
