@@ -6,7 +6,8 @@
 }
 
 .card p {
-    text-align: justify;
+    /* text-align: justify; */
+    text-align: left;
     color: #666;
 }
 

@@ -43,7 +43,7 @@
             <section class="cards-container">
                 <article class="card kayak">
                     <figure>
-                        <a href="kayak-teno.html"><img src="img/kayak.jpg" alt=""></a>
+                        <a href="kayak-teno.html"><img title="excursiones kayak Tenerife" src="img/kayak.jpg" alt="imagen de dos kayaks naranjas sobre el agua"></a>
                         <figcaption class="bg-blue">
                             <p class="category"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="icon"
                                     viewBox="0 0 16 16">
@@ -60,13 +60,14 @@
                             oportunidad de explorar cuevas ocultas y disfrutar de una experiencia inolvidable en
                             contacto con la naturaleza. ¡Reserva
                             ahora y prepárate para una aventura inigualable!</p>
-                        <button class="btn bg-blue"><a href="kayak-teno.html">Ver
-                                excursión</a></button>
+                        <button class="btn bg-blue">
+                            <a href="kayak-teno.html">Ver excursión</a>
+                        </button>
                     </aside>
                 </article>
                 <article class="card senderismo">
                     <figure>
-                        <a href=""><img src="img/laurisilva.jpg" alt=""></a>
+                        <a href=""><img src="img/laurisilva.jpg" title="excursiones senderismo El Pijaral Tenerife" alt="imagen de laurisilva tenerife"></a>
                         <figcaption class="bg-blue">
                             <p class="category"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="icon"
                                     viewBox="0 0 16 16">
@@ -89,7 +90,7 @@
                 </article>
                 <article class="card">
                     <figure>
-                        <a href=""><img src="img/teide.jpg" alt=""></a>
+                        <a href=""><img src="img/teide.jpg" title="excursiones senderismo Ruta Pico Cho Marcial Tenerife" alt="imagen de persona de espaldas caminando por el teide"></a>
                         <figcaption class="bg-blue">
                             <p class="category"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="icon"
                                     viewBox="0 0 16 16">
@@ -112,7 +113,7 @@
                 </article>
                 <article class="card">
                     <figure>
-                        <a href=""><img src="img/buceo.jpg" alt=""></a>
+                        <a href=""><img src="img/buceo.jpg" title="excursiones bautismo buceo" alt="imagen de persona buceando"></a>
                         <figcaption class="bg-blue">
                             <p class="category"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="icon"
                                     viewBox="0 0 16 16">
@@ -133,7 +134,7 @@
                 </article>
                 <article class="card">
                     <figure>
-                        <a href=""><img src="img/astronomia.jpg" alt=""></a>
+                        <a href=""><img src="img/astronomia.jpg" title="excursiones ruta bajo las estrellas" alt="imagen de persona en la noche bajo cielo estrellado"></a>
                         <figcaption class="bg-blue">
                             <p class="category"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="icon"
                                     viewBox="0 0 16 16">
@@ -155,7 +156,7 @@
                 </article>
                 <article class="card">
                     <figure>
-                        <a href=""><img src="img/paisaje-lunar.jpg" alt=""></a>
+                        <a href=""><img src="img/paisaje-lunar.jpg" title="senderismo paisaje lunar" alt="imagen del paisaje lunar en tenerife"></a>
                         <figcaption class="bg-blue">
                             <p class="category"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="icon"
                                     viewBox="0 0 16 16">
@@ -221,15 +222,19 @@
                 <article class="contact-form">
                     <h3>Formulario de contacto:</h3>
                     <form action="#" method="POST">
-                        <input type="text" id="name" name="name" placeholder="Nombre" required>
-                        <input type="email" id="email" name="email" placeholder="Email" required>
+                        <!-- <label for="name">Nombre:</label> -->
+                        <input type="text" id="name" name="name" placeholder="Nombre" aria-label="Nombre" required>
+                        <!-- <label for="email">Email:</label> -->
+                        <input type="email" id="email" name="email" placeholder="Email"aria-label="Email"  required>
+                        <!-- <label for="message">Mensaje (máx. 500 caracteres):</label> -->
                         <textarea id="message" name="message" maxlength="500" height="200px"
-                            placeholder="Mensaje (máx. 500 caracteres)" required></textarea>
+                            placeholder="Mensaje (máx. 500 caracteres)" aria-label="Mensaje" required></textarea>
                         <button class="contact-form-button" type="submit">Enviar</button>
                         <label for="privacy-policy" class="privacy-policy-check">
-                            <input type="checkbox" id="privacy-policy" name="privacy-policy" required>
-                            <span class="privacy-text">Al continuar, acepta nuestra <a href="" class="privacy-link"
-                                    target="_blank">política de privacidad</a></span>
+                            <input type="checkbox" id="privacy-policy" name="privacy-policy" aria-label="Acepto la política de privacidad" required>
+                            <span class="privacy-text">Al continuar, acepta nuestra 
+                                <a href="" class="privacy-link" target="_blank">Política de privacidad</a>
+                            </span>
                         </label>
                 </article>
             </section>
