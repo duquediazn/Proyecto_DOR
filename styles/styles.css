@@ -238,6 +238,7 @@ ul.breadcrumb li {
     display: inline;
     font-size: 1rem;
     color: rgba(255, 255, 255, 0.5);
+    font-weight: 500;
 }
 
 /* Símbolo (/) antes de cada li */

@@ -10,22 +10,22 @@ p {
 }
 
 #breadcrumb {
-    background-color: var(--yellow);
+    background-color: rgba(255, 204, 51, 0.5);
     grid-column: 1/4;
 }
 
 ul.breadcrumb li {
-    color: var(--title);
+    color: var(--text);
 }
 
 /* Símbolo (/) antes de cada li */
 ul.breadcrumb li+li:before {
-    color: var(--title);
+    color: var(--text);
     content: "/\00a0";
 }
 
 ul.breadcrumb li a {
-    color: var(--title);
+    color: var(--text);
 }
 
 ul.breadcrumb li a:hover {
