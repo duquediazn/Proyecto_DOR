@@ -247,7 +247,6 @@ ul.breadcrumb li+li:before {
 }
 
 ul.breadcrumb li a {
-    color: var(--blue);
     text-decoration: none;
     color: white;
 }
@@ -281,6 +280,20 @@ ul.breadcrumb li a:hover {
 
 .imagen-cabecera h1 {
     text-transform: uppercase;
+}
+
+.cabecera {
+    background-color: var(--blue);
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1/4;
+}
+
+.cabecera h1 {
+    color: white;
 }
 
 main {
@@ -560,7 +573,7 @@ footer {
 }
 
 .license p,
-a.enlace {
+.license a.enlace {
     color: white;
     font-family: "Roboto", Arial, Helvetica, sans-serif;
 

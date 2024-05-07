@@ -50,6 +50,11 @@
                 <h2>Descripción</h2>
                 <video controls="controls">
                     <source src="videos/4154925-sd_960_540_30fps.mp4" type="video/mp4" />
+                    <track kind="descriptions" src="videos/descriptions_es.vtt" srclang="es"
+                        label="Descripción del video" />
+                    <!--La pista de texto (<track>) proporciona una descripción del video. 
+                        La pista de texto debe estar en formato VTT (WebVTT) y debe contener 
+                        la descripción del video en texto plano o en formato HTML.-->
                 </video>
                 <article>
                     <h3>Sobre esta excursión:</h3>
@@ -102,8 +107,10 @@
                 <section class="calendar-wrapper hidden">
                     <nav class="calendar-nav bg-orange">
                         <ul>
-                            <li id="prev"><button>&#10094;</button></li>
-                            <li id="next"><button>&#10095;</button></li>
+                            <li id="prev" aria-hidden="true"><button
+                                    aria-label="Flecha atrás en el calendario">&#10094;</button></li>
+                            <li id="next" aria-hidden="true"><button
+                                    aria-label="Flecha alante en el calendario">&#10095;</button></li>
                             <!--Se añade el mes y el año dinámicamente con JavaScript-->
                             <li id="current-date"></li>
                         </ul>
@@ -128,7 +135,7 @@
                     <fieldset class="fecha-reserva">
                         <legend>Fecha de reserva:</legend>
                         <label for="fecha-reserva"> Selecciona un día:
-                            <input type="date" id="fecha-reserva" name="fecha-reserva">
+                            <input type="date" id="fecha-reserva" name="fecha-reserva" required>
                         </label>
                     </fieldset>
                     <fieldset class="horarios">

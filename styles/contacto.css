@@ -2,16 +2,13 @@ main {
     grid-template-columns: 12.5% 75% 12.5%;
 }
 
-.imagen-cabecera {
-    background-image: url("../img/atardecer.jpg");
-    background-position: center;
-    height: 300px;
-    width: 100%;
+#breadcrumb {
+    background-color: var(--orange);
+    grid-column: 1/4;
 }
 
-.imagen-cabecera h1 {
-    color: white;
-    text-shadow: 2px 2px var(--blue);
+ul.breadcrumb li a:hover {
+    color: var(--blue);
 }
 
 .contact-tel-email {
