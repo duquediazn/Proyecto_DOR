@@ -579,6 +579,12 @@ footer {
 
 }
 
+.license a.enlace:hover {
+    color: var(--orange);
+    transform: translateX(8px);
+    text-decoration: underline;
+}
+
 .footer-logo {
     height: 125px;
     display: inline-block;
