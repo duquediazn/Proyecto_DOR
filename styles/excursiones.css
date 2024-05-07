@@ -10,7 +10,7 @@ p {
 }
 
 #breadcrumb {
-    background-color: var(--orange);
+    background-color: var(--yellow);
     grid-column: 1/4;
 }
 
