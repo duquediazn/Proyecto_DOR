@@ -11,6 +11,15 @@ ul.breadcrumb li {
     color: var(--text);
 }
 
+.contact-tel-email p {
+    font-weight: 500;
+}
+
+.enlace {
+    text-decoration: none;
+    color: var(--blue);
+}
+
 /* Símbolo (/) antes de cada li */
 ul.breadcrumb li+li:before {
     color: var(--text);
