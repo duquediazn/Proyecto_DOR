@@ -142,10 +142,11 @@
                     <fieldset class="horarios">
                         <legend>Horarios:</legend>
                         <label for="time-1"><time datetime="10:30">10:30</time>
-                            <input type="radio" name="hora" id="time-1" value="10:30" class="hora"
-                                aria-label="time-1"></label>
+                            <input type="radio" name="hora" id="time-1" value="10:30" class="hora" aria-label="time-1"
+                                required></label>
                         <label for="time-2"><time datetime="15:30">15:30</time>
-                            <input type="radio" name="hora" id="time-2" value="15:30" class="hora" aria-label="time-2">
+                            <input type="radio" name="hora" id="time-2" value="15:30" class="hora" aria-label="time-2"
+                                required>
                         </label>
                         <p id="user-feedback" class="hidden"></p>
                     </fieldset>
@@ -153,7 +154,7 @@
                         <legend>Tickets:</legend>
                         <p>Precio por persona.</p>
                         <label for="adultos">Adultos <span id="precio-adulto">25</span>€:
-                            <select name="adultos" id="adultos">
+                            <select name="adultos" id="adultos" required>
                                 <option value="0" selected>0</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -166,7 +167,7 @@
                             </select></label>
 
                         <label for="menores">Menores <span id="precio-menor">18</span>€:
-                            <select name="menores" id="menores">
+                            <select name="menores" id="menores" required>
                                 <option value="0" selected>0</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
