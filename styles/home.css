@@ -88,6 +88,12 @@ p.price {
     }
 }
 
+@media(max-width: 767px) {
+    main {
+        grid-template-columns: 5% 90% 5%;
+    }
+}
+
 @media(max-width: 574px) {
     .card {
         width: 300px;

@@ -661,6 +661,9 @@ li svg+p {
 }
 
 @media(max-width: 767px) {
+    main {
+        grid-template-columns: 5% 90% 5%;
+    }
 
     /*Footer*/
     .footer-col {
