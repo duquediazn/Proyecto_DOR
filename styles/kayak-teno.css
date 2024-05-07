@@ -158,7 +158,7 @@ video {
 }
 
 .days li.inactive {
-    color: #ccc;
+    color: var(--text);
     cursor: default;
 }
 
@@ -183,7 +183,7 @@ video {
 }
 
 .days li.active::before {
-    background-color: var(--orange);
+    background-color: var(--blue);
 }
 
 .days li:hover::before {
