@@ -6,6 +6,10 @@ main {
     margin-bottom: 3rem;
 }
 
+.accesibility h1 {
+    text-align: center;
+}
+
 .accesibility p {
     text-align: justify;
     margin-bottom: 3rem;
