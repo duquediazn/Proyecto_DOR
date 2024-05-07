@@ -15,7 +15,7 @@ p {
 }
 
 ul.breadcrumb li {
-    color: rgba(255, 255, 255, 0.2);
+    color: var(--title);
 }
 
 /* Símbolo (/) antes de cada li */
