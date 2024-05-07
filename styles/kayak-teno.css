@@ -228,11 +228,12 @@ fieldset legend {
     background-color: rgba(0, 255, 0, 0.2);
 }
 
-fieldset select {
+fieldset select,
+fieldset input {
     color: var(--text);
     font-weight: 600;
     font-size: large;
-    width: 4em;
+    width: fit-content;
 }
 
 .precio-total p {
@@ -243,6 +244,12 @@ fieldset select {
 fieldset:last-of-type {
     display: flex;
     justify-content: center;
+}
+
+form button {
+    width: 10rem;
+    height: 4rem;
+    cursor: pointer;
 }
 
 .hidden {

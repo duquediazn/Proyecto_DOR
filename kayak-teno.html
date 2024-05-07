@@ -98,7 +98,8 @@
             </section>
             <aside class="booking">
                 <h2>Booking</h2>
-                <section class="calendar-wrapper">
+                <!--Calendario dinámico-->
+                <section class="calendar-wrapper hidden">
                     <nav class="calendar-nav bg-orange">
                         <ul>
                             <li id="prev"><button>&#10094;</button></li>
@@ -122,17 +123,25 @@
                         </ul>
                     </section>
                 </section>
-                <form action="" class="hidden">
-                    <fieldset class="horarios hidden">
+                <!--Formulario de reserva-->
+                <form action="" class="">
+                    <fieldset class="fecha-reserva">
+                        <legend>Fecha de reserva:</legend>
+                        <label for="fecha-reserva"> Selecciona un día:
+                            <input type="date" id="fecha-reserva" name="fecha-reserva">
+                        </label>
+                    </fieldset>
+                    <fieldset class="horarios">
                         <legend>Horarios:</legend>
                         <label for="time-1"><time datetime="10:30">10:30</time>
-                            <input type="radio" name="hora" id="time-1" value="10:30" class="hora" aria-label="time-1"></label>
+                            <input type="radio" name="hora" id="time-1" value="10:30" class="hora"
+                                aria-label="time-1"></label>
                         <label for="time-2"><time datetime="15:30">15:30</time>
                             <input type="radio" name="hora" id="time-2" value="15:30" class="hora" aria-label="time-2">
                         </label>
-                        <p id="user-feedback"></p>
+                        <p id="user-feedback" class="hidden"></p>
                     </fieldset>
-                    <fieldset class="tickets hidden">
+                    <fieldset class="tickets">
                         <legend>Tickets:</legend>
                         <p>Precio por persona.</p>
                         <label for="adultos">Adultos <span id="precio-adulto">25</span>€:
@@ -166,7 +175,7 @@
                         <p>Precio total: <span id="precio-total"></span> €</p>
                     </fieldset>
                     <fieldset>
-                        <button class="btn bg-orange hidden"><a href="">Reservar</a></button>
+                        <button class="btn bg-orange" type="submit">Reservar</button>
                     </fieldset>
                 </form>
             </aside>
@@ -178,27 +187,41 @@
             <section class="review-section">
                 <article class="review-card">
                     <h3>Excursión a la Cima del Teide</h3>
-                    <p>¡Una experiencia inolvidable! El ascenso al pico más alto de España fue increíble. El paisaje lunar y las vistas panorámicas de la isla desde la cima valieron cada paso. Nuestro guía fue muy conocedor y amable, ¡definitivamente recomendaría esta excursión a cualquiera que visite Tenerife!</p>
+                    <p>¡Una experiencia inolvidable! El ascenso al pico más alto de España fue increíble. El paisaje
+                        lunar y las vistas panorámicas de la isla desde la cima valieron cada paso. Nuestro guía fue muy
+                        conocedor y amable, ¡definitivamente recomendaría esta excursión a cualquiera que visite
+                        Tenerife!</p>
                     <span class="rating">★★★★</span>
                 </article>
                 <article class="review-card">
                     <h3>Tour de Avistamiento de Ballenas y Delfines</h3>
-                    <p>¡Una aventura marina emocionante! Nos emocionamos mucho al ver a estos magníficos animales en su hábitat natural. El equipo de la excursión fue muy profesional y nos proporcionó mucha información interesante sobre la vida marina local. ¡Una experiencia que nunca olvidaremos!</p>
+                    <p>¡Una aventura marina emocionante! Nos emocionamos mucho al ver a estos magníficos animales en su
+                        hábitat natural. El equipo de la excursión fue muy profesional y nos proporcionó mucha
+                        información interesante sobre la vida marina local. ¡Una experiencia que nunca olvidaremos!</p>
                     <span class="rating">★★★★★</span>
                 </article>
                 <article class="review-card">
                     <h3>Ruta de Senderismo por los Acantilados de Los Gigantes</h3>
-                    <p> ¡Impresionante belleza natural! Recorrer estos impresionantes acantilados nos dejó sin aliento. Las vistas eran espectaculares y el aire fresco del océano era revitalizante. Nuestro guía fue muy apasionado y nos llevó por senderos seguros y pintorescos. Definitivamente una excursión que recomendaría a los amantes de la naturaleza.</p>
+                    <p> ¡Impresionante belleza natural! Recorrer estos impresionantes acantilados nos dejó sin aliento.
+                        Las vistas eran espectaculares y el aire fresco del océano era revitalizante. Nuestro guía fue
+                        muy apasionado y nos llevó por senderos seguros y pintorescos. Definitivamente una excursión que
+                        recomendaría a los amantes de la naturaleza.</p>
                     <span class="rating">★★★★</span>
                 </article>
                 <article class="review-card">
                     <h3>Visita Guiada al Parque Nacional de Garajonay</h3>
-                    <p>Una experiencia mágica en medio de la exuberante vegetación de laurisilva. El parque nacional es un verdadero tesoro natural y nuestra guía nos llevó a los lugares más destacados mientras nos contaba historias fascinantes sobre la flora y fauna local. ¡Una excursión perfecta para aquellos que buscan conectar con la naturaleza!</p>
+                    <p>Una experiencia mágica en medio de la exuberante vegetación de laurisilva. El parque nacional es
+                        un verdadero tesoro natural y nuestra guía nos llevó a los lugares más destacados mientras nos
+                        contaba historias fascinantes sobre la flora y fauna local. ¡Una excursión perfecta para
+                        aquellos que buscan conectar con la naturaleza!</p>
                     <span class="rating">★★★★★</span>
                 </article>
                 <article class="review-card">
                     <h3>Tour Gastronómico por Santa Cruz de Tenerife</h3>
-                    <p>Una deliciosa aventura culinaria. Probamos una variedad de platos tradicionales canarios y aprendimos sobre la rica cultura gastronómica de la isla. Nuestro guía nos llevó a restaurantes auténticos y nos dio recomendaciones útiles sobre qué probar. ¡Una experiencia sabrosa que recomendamos a todos los amantes de la buena comida!</p>
+                    <p>Una deliciosa aventura culinaria. Probamos una variedad de platos tradicionales canarios y
+                        aprendimos sobre la rica cultura gastronómica de la isla. Nuestro guía nos llevó a restaurantes
+                        auténticos y nos dio recomendaciones útiles sobre qué probar. ¡Una experiencia sabrosa que
+                        recomendamos a todos los amantes de la buena comida!</p>
                     <span class="rating">★★★★</span>
                 </article>
             </section>

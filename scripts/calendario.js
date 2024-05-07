@@ -9,6 +9,14 @@ let diasDisponibles = document.querySelectorAll('.disponible');
 
 const MONTHS = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre']
 
+const elementosOcultos = document.querySelectorAll('.horarios, #user-feedback, form, .tickets, form .btn, .fecha-reserva');
+elementosOcultos.forEach(elemento => {
+    elemento.classList.add('hidden'); //Ocultamos estos elementos de entrada ya que los iremos mostrando al realizar ciertas acciones
+    console.log('holi');
+});
+const calendarWrapper = document.querySelector('.calendar-wrapper');
+calendarWrapper.classList.remove('hidden'); //Mostramos el calendario (por defecto oculto por si no se carga el script)
+
 /*Función eventoClick(): Comportamiento al hacer click sobre un día del mes en el calendario*/
 //Reserva de fecha:
 const horarios = document.querySelector('.horarios');
@@ -32,6 +40,7 @@ const eventoClick = (e) => {
     }
     horarios.classList.remove('hidden'); //Elimina la clase .hidden del fliendset .horarios y del formulario.
     formulario.classList.remove('hidden');
+    userFeedback.classList.remove('hidden');
     userFeedback.innerText =
         `Horario para el día: ${e.target.innerText} de ${document.querySelector('#current-date').innerText.slice(0, document.querySelector('#current-date').innerText.indexOf(' ')).toLowerCase()} de ${document.querySelector('#current-date').innerText.slice(document.querySelector('#current-date').innerText.indexOf(' ') + 1)}`
 
