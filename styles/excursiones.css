@@ -13,6 +13,11 @@ p {
     background-color: var(--orange);
 }
 
+ul.breadcrumb li a {
+    color: var(--title);
+}
+
+
 ul.breadcrumb li a:hover {
     color: var(--blue);
 }
