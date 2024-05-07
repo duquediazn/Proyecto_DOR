@@ -261,7 +261,7 @@ ul.breadcrumb li a:hover {
 .imagen-cabecera {
     width: 100%;
     height: 600px;
-    /* background-image: url("../img/header-home.webp"); */
+    background-image: url("../img/header-home.webp");
     background-size: cover;
     grid-column: 1 / 4;
     display: flex;
