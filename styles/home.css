@@ -25,7 +25,7 @@
     transform: scale(1.03);
 }
 
-.card-aside {
+.card-section {
     padding: 5%;
     text-align: center;
 }
@@ -45,14 +45,14 @@
     height: calc(400px*(3/4));
 }
 
-figcaption {
+aside {
     width: 100%;
     position: absolute;
     bottom: 0rem;
     padding: 0.3rem;
 }
 
-figcaption p {
+aside p {
     margin: 0rem;
 }
 
