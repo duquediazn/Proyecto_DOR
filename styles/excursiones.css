@@ -132,7 +132,7 @@ form label {
     object-fit: cover;
 }
 
-.excursion section {
+.excursion article {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -141,7 +141,7 @@ form label {
     padding: 1%;
 }
 
-.excursion section p {
+.excursion article p {
     text-align: justify;
 }
 
@@ -157,7 +157,7 @@ form label {
 @media (max-width: 1700px) {
 
     .excursion figure,
-    .excursion section {
+    .excursion article {
         width: 50%;
     }
 }
@@ -169,7 +169,7 @@ form label {
     }
 
     .excursion figure,
-    .excursion section {
+    .excursion article {
         width: 100%;
     }
 }
