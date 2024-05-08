@@ -12,7 +12,6 @@ const MONTHS = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 
 const elementosOcultos = document.querySelectorAll('.horarios, #user-feedback, form, .tickets, form .btn, .fecha-reserva');
 elementosOcultos.forEach(elemento => {
     elemento.classList.add('hidden'); //Ocultamos estos elementos de entrada ya que los iremos mostrando al realizar ciertas acciones
-    console.log('holi');
 });
 const calendarWrapper = document.querySelector('.calendar-wrapper');
 calendarWrapper.classList.remove('hidden'); //Mostramos el calendario (por defecto oculto por si no se carga el script)
