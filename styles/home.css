@@ -33,7 +33,8 @@
 .card img {
     border-radius: 5px 5px 0 0;
     width: 400px;
-    height: calc(400px*(3/4));
+    /* height: calc(400px*(3/4)); */
+    height: 100%;
     object-fit: cover;
     /*Mantener relación de aspecto y hacer imagen responsive:*/
     /*max-width: 100%; /*100% del largo de la imagen ocupando el máximo del tamaño del contenedor.*/
@@ -72,13 +73,14 @@ p.price {
 }
 
 @media (max-width: 1300px) {
-    .card {
+
+    .card,
+    .card img {
         width: 350px;
     }
 
-    .card img {
-        width: 350px;
-        height: calc(300px*(3/4));
+    .card figure {
+        height: calc(350px*(3/4));
     }
 
     .imagen-cabecera h1,
@@ -95,12 +97,13 @@ p.price {
 }
 
 @media(max-width: 574px) {
-    .card {
+
+    .card,
+    .card img {
         width: 300px;
     }
 
-    .card img {
-        width: 300px;
+    .card figure {
         height: calc(300px*(3/4));
     }
 }
