@@ -25,6 +25,12 @@ main {
 .description {
     grid-column: 1 / 2;
     padding: 1rem 0rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.description video {
+    align-self: center;
 }
 
 .description article {
