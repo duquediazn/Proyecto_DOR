@@ -167,6 +167,25 @@ header {
     transform: scale(1.2);
 }
 
+/*Carrito compra*/
+.cart-icon {
+    position: relative;
+}
+
+.cart-icon span {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: -8px;
+}
+
 /*Estilos tipográficos genéricos*/
 h1 {
     font-family: "Montserrat";

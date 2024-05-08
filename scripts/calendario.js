@@ -8,11 +8,9 @@ let currentMonth = date.getMonth();
 let diasDisponibles = document.querySelectorAll('.disponible');
 
 const MONTHS = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre']
-
 const elementosOcultos = document.querySelectorAll('.horarios, #user-feedback, form, .tickets, form .btn, .fecha-reserva');
 elementosOcultos.forEach(elemento => {
     elemento.classList.add('hidden'); //Ocultamos estos elementos de entrada ya que los iremos mostrando al realizar ciertas acciones
-    console.log('holi');
 });
 const calendarWrapper = document.querySelector('.calendar-wrapper');
 calendarWrapper.classList.remove('hidden'); //Mostramos el calendario (por defecto oculto por si no se carga el script)
@@ -153,13 +151,29 @@ for (const input of radioButtons) {
 
 const adultos = document.querySelector('#adultos');
 const menores = document.querySelector('#menores');
+const precios = {
+    'adultos': 25.00,
+    'menores': 18.00
+}
 tickets.addEventListener('change', function () { //Al cambiar el valor de alguno de los selects
     if (adultos.value !== '0' || menores.value !== '0') { // Si se selecciona algún tipo de entrada muestra el botón de reserva
         btnReservar.classList.remove('hidden');
         fieldsetPecioTotal.classList.remove('hidden');
-        precioTotal.innerText = `${adultos.value * 25.00 + menores.value * 18.00}`; //Cálculo del precio total
+        precioTotal.innerText = `${adultos.value * precios['adultos'] + menores.value * precios['menores']}`; //Cálculo del precio total
     } else if (adultos.value === '0' && menores.value === '0') { // Si no hay seleccionada ninguna entrada oculta el botón de reserva
         btnReservar.classList.add('hidden');
         fieldsetPecioTotal.classList.remove('hidden');
     }
 })
+
+// Almacenar datos cuando se envía el formulario
+formulario.addEventListener('submit', function (event) {
+    event.preventDefault(); // Evitar el envío del formulario
+    const formData = new FormData(formulario); // Obtener datos del formulario
+    localStorage.setItem('formData', JSON.stringify(Object.fromEntries(formData.entries())));
+    localStorage.setItem('selectedDate', userFeedback.innerText); // Almacena la fecha completa
+    localStorage.setItem('precioTotal', precioTotal.innerText);
+    localStorage.setItem('precioAdulto', precios['adultos']);
+    localStorage.setItem('precioMenor', precios['menores']);
+    window.location.href = 'carrito.html'; // Redirigir a la página del carrito
+});

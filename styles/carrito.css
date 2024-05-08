@@ -1,0 +1,31 @@
+.main-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.cart-section {
+    display: inherit;
+    flex-wrap: wrap;
+    border: 2px solid var(--blue);
+    border-radius: 1em;
+    padding: 1rem;
+}
+
+.cart-section section:first-of-type {
+    border-right: 2px dotted var(--blue);
+}
+
+.cart-section h2 {
+    text-align: left;
+}
+
+p.precio-final {
+    font-size: x-large;
+    font-weight: 600;
+}
+
+.cart-section button {
+    align-self: center;
+}
